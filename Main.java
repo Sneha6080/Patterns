@@ -1,3 +1,4 @@
+package Patterns;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -13,98 +14,94 @@ public class Main {
 //        patternPrintTriangleNumber1(5);
         patternPrintTriangleCharacter1(5);
     }
-    public static  void patternPrintTriangleCharacter1(int n){
+
+    public static void patternPrintTriangleCharacter1(int n) {
         char ch = 'A';
-        for (int i=0;i<n;i++){
-            for (int j=0;j<=i;j++){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(ch + " ");
             }
-            ch=(char) (ch+1);
+            ch = (char) (ch + 1);
             System.out.println();
         }
     }
-    public static  void patternPrintTriangleNumber1(int n){
-        for (int i=1;i<=n;i++){
-            for (int j=1;j<=i;j++){
+
+    public static void patternPrintTriangleNumber1(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print(i + " ");
             }
             System.out.println();
         }
     }
-    public static  void patternPrintTriangleStar1(int n){
-        for (int i=0;i<n;i++){
-            for (int j=0;j<=i;j++){
+
+    public static void patternPrintTriangleStar1(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
 
-    public static  void patternPrintTriangleNumber(int n){
-        for (int i=0;i<n;i++){
-            for (int j=0;j<=i;j++){
+    public static void patternPrintTriangleNumber(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
 
-    public static  void continuePatternPrintRectangleCharacter(int n){
+    public static void continuePatternPrintRectangleCharacter(int n) {
         char k = 'A';
-        for (int i=1;i<=n;i++){
-            for (int j=1;j<=n;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
                 System.out.print(k + " ");
-                k=(char) (k+1);
+                k = (char) (k + 1);
             }
             System.out.println();
         }
     }
-    public static  void continuePatternPrintRectangleNumber(int n){
+
+    public static void continuePatternPrintRectangleNumber(int n) {
         int k = 1;
-        for (int i=1;i<=n;i++){
-            for (int j=1;j<=n;j++){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
                 System.out.print(k + " ");
                 k++;
             }
             System.out.println();
         }
     }
-    public static  void patternPrintRectangleNumbers(int n){
-        for (int i=1;i<=n;i++){
-            for (int j=1;j<=n;j++){
+
+    public static void patternPrintRectangleNumbers(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
                 System.out.print(j + " ");
             }
             System.out.println();
         }
     }
-    public static  void patternPrintRectangleStar(int n){
-        for (int i=1;i<=n;i++){
-            for (int j=1;j<=n;j++){
+
+    public static void patternPrintRectangleStar(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
     }
-    public static  void patternPrintRectangleCharacter(int n){
-        for (int i=1;i<=n;i++){
+
+    public static void patternPrintRectangleCharacter(int n) {
+        for (int i = 1; i <= n; i++) {
             char ch = 'A';
-            for (int j=1;j<=n;j++){
+            for (int j = 1; j <= n; j++) {
                 System.out.print(ch + " ");
-                ch = (char) (ch+1);
+                ch = (char) (ch + 1);
             }
             System.out.println();
         }
     }
-    public static String convertToTitle(int columnNumber) {
-        char[] chars = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-        String ans = "";
-        int r = 0;
-        while (columnNumber>=0){
-            r = columnNumber/26;
-            ans += chars[r];
+}
 
-            columnNumber/=26;
-        }
-        return ans;
-    }
-    }
