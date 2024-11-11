@@ -12,7 +12,72 @@ public class Main {
 //        continuePatternPrintRectangleCharacter(4);
 //        patternPrintTriangleStar1(9);
 //        patternPrintTriangleNumber1(5);
-        patternPrintTriangleCharacter1(5);
+//        patternPrintTriangleCharacter1(5);
+//        patternPrintRectangleNumberAndCharacter1(4);
+        patternPrintRectangleNumberAndCharacter2A(4);
+    }
+
+    public static void patternPrintRectangleNumberAndCharacter1(int n) {
+        int k = 1;
+        char c = 'A';
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if(i%2==1){
+                    System.out.print(k + " ");
+                    k++;
+                }
+                else {
+                    System.out.print(c + " ");
+                    c++;
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void patternPrintRectangleNumberAndCharacter2A(int n) {
+        int k = 1;
+        char c = 'A';
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if(i%2==1){
+                    System.out.print(k + " ");
+                }
+                else {
+                    System.out.print(c + " ");
+                }
+            }
+            if (i%2==1)
+                k++;
+            else
+                c++;
+            System.out.println();
+        }
+    }
+
+    public static void patternPrintRectangleNumberAndCharacter2B(int n) {
+        int k = 1;
+        char c = 'A';
+        boolean flag = false;
+        for (int i = 1; i <= n; i++) {
+            if(i%2==0){
+                flag=true;
+            }else{
+                flag=false;
+            }
+            for (int j = 1; j <= n; j++) {
+                if(flag){
+                    System.out.print(c + " ");
+                }
+                else {
+                    System.out.print(k + " ");
+                }
+            }
+            if (flag)
+                c++;
+            else
+                k++;
+            System.out.println();
+        }
     }
 
     public static void patternPrintTriangleCharacter1(int n) {
