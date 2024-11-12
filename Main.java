@@ -5,18 +5,83 @@ public class Main {
     public static void main(String[] args) {
 
 //        String ans = convertToTitle(701);
-//        patternPrintRectangleNumbers(5);
-//        patternPrintRectangleStar(5);
-//        patternPrintRectangleCharacter(5);
+//       patternPrintRectangleNumbers(3);
+//        1 2 3
+//        1 2 3
+//        1 2 3
+//       System.out.println();
+//       patternPrintRectangleStar(4);
+//       * * * *
+//       * * * *
+//       * * * *
+//       * * * *
+//        System.out.println();
+//        patternPrintRectangleCharacter(4);
+//        A B C D
+//        A B C D
+//        A B C D
+//        A B C D
+//        System.out.println();
 //        continuePatternPrintRectangleNumber(3);
-//        continuePatternPrintRectangleCharacter(4);
-//        patternPrintTriangleStar1(9);
-//        patternPrintTriangleNumber1(5);
-//        patternPrintTriangleCharacter1(5);
-//        patternPrintRectangleNumberAndCharacter1(4);
-        patternPrintRectangleNumberAndCharacter2A(4);
-    }
+//        1 2 3
+//        4 5 6
+//        7 8 9
+//        System.out.println();
+//       continuePatternPrintRectangleCharacter(4);
+//        A B C D
+//        E F G H
+//        I J K L
+//        M N O P
 
+//        System.out.println();
+//        patternPrintTriangleStar1(4);
+//          *
+//          * *
+//          * * *
+//          * * * *
+//        System.out.println();
+//        patternPrintTriangleNumber1(5);
+//        1
+//        2 2
+//        3 3 3
+//        4 4 4 4
+//        5 5 5 5 5
+//        System.out.println();
+//        patternPrintTriangleCharacter1(5);
+//        A
+//        B B
+//        C C C
+//        D D D D
+//        E E E E E
+//        System.out.println();
+//        patternPrintRectangleNumberAndCharacter1(4);
+//        1 2 3 4
+//        A B C D
+//        5 6 7 8
+//        E F G H
+//        System.out.println();
+//        patternPrintRectangleNumberAndCharacter2A(4);
+//        1 1 1 1
+//        A A A A
+//        2 2 2 2
+//        B B B B
+//        System.out.println();
+//        patternOfTriangleNumber(5);
+//        1
+//        1 2
+//        1 2 3
+//        1 2 3 4
+//        1 2 3 4 5
+    }
+    public static  void patternOfTriangleNumber(int n){
+
+        for (int i=1;i<=n;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void patternPrintRectangleNumberAndCharacter1(int n) {
         int k = 1;
         char c = 'A';
